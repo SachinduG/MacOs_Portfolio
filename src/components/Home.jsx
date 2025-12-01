@@ -11,7 +11,7 @@ const projects = locations.work?.children ?? [];
 const Home = () => {
   const { setActiveLocation } = useLocationStore();
   const { openWindow } = useWindowStore();
-  const handleOpenProjectFolder = (project) => {
+  const handleOpenProjectFinder = (project) => {
     setActiveLocation(project);
     openWindow("finder");
   };
@@ -23,9 +23,9 @@ const Home = () => {
       <ul>
         {projects.map((project) => (
           <li
-            key={projects.id}
+            key={project.id}
             className={clsx("group folder", project.windowPosition)}
-            onClick={() => handleOpenProjectFolder(project)}
+            onClick={() => handleOpenProjectFinder(project)}
           >
             <img src="/images/folder.png" alt="{project.name}" />
             <p>{project.name}</p>
