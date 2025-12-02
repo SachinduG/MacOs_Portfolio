@@ -20,7 +20,11 @@ const Contact = () => {
         className="w-20 rounded-full"/>
         <h3>Let's Connect</h3>
         <p>Got an idea? A bug to squash? Or just wanna talk tech? I'm in.</p>
-        <p>sachindugimhana0@gmail.com</p>
+        <div className="flex items-center gap-x-6 gap-y-2 flex-wrap">
+          <a href="tel:+46762519803" className="font-medium hover:underline">+46 76 251 9803</a>
+          <a href="mailto:sachindugimhana0@gmail.com" className="font-medium hover:underline">sachindugimhana0@gmail.com</a>
+        </div>
+        
         <ul>
             {socials.map(({id, bg, link, icon, text}) => (
                 <li key={id} style={{backgroundColor:bg}}>
