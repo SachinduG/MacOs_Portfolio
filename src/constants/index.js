@@ -77,52 +77,84 @@ const dockApps = [
 const blogPosts = [
   {
     id: 1,
-    date: "Sep 2, 2025",
+    date: "Feb 20, 2021",
     title:
-      "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
+      "Serverside for CRUD using MERN stack -Part 1",
     image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+    link: "https://sachindugimhana.medium.com/serverside-for-crud-using-mern-stack-c5ec995b34f9",
   },
   {
     id: 2,
-    date: "Aug 28, 2025",
-    title: "The Ultimate Guide to Mastering Three.js for 3D Development",
+    date: "Mar 9, 2021",
+    title: "Serverside for CRUD using MERN stack -Part 2",
     image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+    link: "https://sachindugimhana.medium.com/serverside-for-crud-using-mern-stack-part-2-2481c65e7f4d",
   },
   {
     id: 3,
-    date: "Aug 15, 2025",
-    title: "The Ultimate Guide to Mastering GSAP Animations",
+    date: "Mar 23, 2021",
+    title: "The S.O.L.I.D design principles",
     image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+    link: "https://sachindugimhana.medium.com/the-s-o-l-i-d-design-principles-845dadd731b6",
+  },
+  {
+    id: 4,
+    date: "Apr 6, 2021",
+    title: "Introduction about MongoDB",
+    image: "/images/blog3.png",
+    link: "https://sachindugimhana.medium.com/introduction-about-mongodb-238b48dd4553",
+  },
+  {
+    id: 5,
+    date: "Apr 13, 2021",
+    title: "React vs Angular",
+    image: "/images/blog3.png",
+    link: "https://sachindugimhana.medium.com/react-vs-angular-9c05d01bae90",
+  },
+  {
+    id: 6,
+    date: "Apr 18, 2021",
+    title: "SQL vs NoSQL: What is the best option for 2021?",
+    image: "/images/blog3.png",
+    link: "https://sachindugimhana.medium.com/sql-vs-nosql-what-is-the-best-option-for-2021-162138ed1931",
+  },
+  {
+    id: 7,
+    date: "May 12, 2021",
+    title: "How to use some Basic Spring Boot Annotations",
+    image: "/images/blog3.png",
+    link: "https://sachindugimhana.medium.com/how-to-use-some-basic-spring-boot-annotations-2393977545e1",
   },
 ];
 
 const techStack = [
   {
+    category: "RPA",
+    items: ["UiPath", "Power Automate"],
+  },
+  {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
+    items: ["React", "JavaScript", "HTML5", "CSS3"],
   },
   {
     category: "Mobile",
-    items: ["React Native", "Expo"],
-  },
-  {
-    category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    items: ["Flutter", "Kotlin", "Android"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["Java", "Node.js", "Python", "C#", "PHP"],
   },
   {
     category: "Database",
-    items: ["MongoDB", "PostgreSQL"],
+    items: ["MongoDB", "MSSQL", "MySQL", "Firebase", "SQLite"],
   },
   {
     category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    items: ["Git", "GitHub", "GitLab", "BitBucket"],
+  },
+  {
+    category: "Languages",
+    items: ["R", "C++", "C"],
   },
 ];
 
@@ -131,29 +163,29 @@ const socials = [
     id: 1,
     text: "Github",
     icon: "/icons/github.svg",
-    bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    bg: "#2e1c1dff",
+    link: "https://github.com/SachinduG",
   },
   {
     id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
+    text: "Medium",
+    icon: "/icons/medium.svg",
     bg: "#4bcb63",
-    link: "https://jsmastery.com/",
+    link: "https://sachindugimhana.medium.com/",
   },
   {
     id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
+    text: "Instagram",
+    icon: "/icons/instagram.svg",
+    bg: "#8a220bff",
+    link: "https://www.instagram.com/sachindu.ig/",
   },
   {
     id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+    link: "https://www.linkedin.com/in/sachindupathirawasam/",
   },
 ];
 
