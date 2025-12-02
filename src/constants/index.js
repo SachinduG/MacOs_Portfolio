@@ -80,14 +80,14 @@ const blogPosts = [
     date: "Feb 20, 2021",
     title:
       "Serverside for CRUD using MERN stack -Part 1",
-    image: "/images/blog1.png",
+    image: "/images/blog1.jpg",
     link: "https://sachindugimhana.medium.com/serverside-for-crud-using-mern-stack-c5ec995b34f9",
   },
   {
     id: 2,
     date: "Mar 9, 2021",
     title: "Serverside for CRUD using MERN stack -Part 2",
-    image: "/images/blog2.png",
+    image: "/images/blog2.jpeg",
     link: "https://sachindugimhana.medium.com/serverside-for-crud-using-mern-stack-part-2-2481c65e7f4d",
   },
   {
@@ -101,28 +101,28 @@ const blogPosts = [
     id: 4,
     date: "Apr 6, 2021",
     title: "Introduction about MongoDB",
-    image: "/images/blog3.png",
+    image: "/images/blog4.png",
     link: "https://sachindugimhana.medium.com/introduction-about-mongodb-238b48dd4553",
   },
   {
     id: 5,
     date: "Apr 13, 2021",
     title: "React vs Angular",
-    image: "/images/blog3.png",
+    image: "/images/blog5.png",
     link: "https://sachindugimhana.medium.com/react-vs-angular-9c05d01bae90",
   },
   {
     id: 6,
     date: "Apr 18, 2021",
     title: "SQL vs NoSQL: What is the best option for 2021?",
-    image: "/images/blog3.png",
+    image: "/images/blog6.png",
     link: "https://sachindugimhana.medium.com/sql-vs-nosql-what-is-the-best-option-for-2021-162138ed1931",
   },
   {
     id: 7,
     date: "May 12, 2021",
     title: "How to use some Basic Spring Boot Annotations",
-    image: "/images/blog3.png",
+    image: "/images/blog7.png",
     link: "https://sachindugimhana.medium.com/how-to-use-some-basic-spring-boot-annotations-2393977545e1",
   },
 ];
@@ -193,22 +193,22 @@ const photosLinks = [
   {
     id: 1,
     icon: "/icons/gicon1.svg",
-    title: "Library",
+    title: "Automation",
   },
   {
     id: 2,
     icon: "/icons/gicon2.svg",
-    title: "Memories",
+    title: "Cybersecurity",
   },
   {
     id: 3,
     icon: "/icons/file.svg",
-    title: "Places",
+    title: "Data",
   },
   {
     id: 4,
     icon: "/icons/gicon4.svg",
-    title: "People",
+    title: "Other",
   },
   {
     id: 5,
@@ -233,6 +233,34 @@ const gallery = [
   {
     id: 4,
     img: "/images/gal4.png",
+  },
+  {
+    id: 5,
+    img: "/images/gal5.png",
+  },
+  {
+    id: 6,
+    img: "/images/gal6.png",
+  },
+  {
+    id: 7,
+    img: "/images/gal7.png",
+  },
+  {
+    id: 8,
+    img: "/images/gal8.png",
+  },
+  {
+    id: 9,
+    img: "/images/gal9.png",
+  },
+  {
+    id: 10,
+    img: "/images/gal10.png",
+  },
+  {
+    id: 11,
+    img: "/images/gal11.png",
   },
 ];
 
