@@ -2,6 +2,7 @@ import React from "react";
 import WindowWrapper from "../hoc/WindowWrapper";
 import useWindowStore from "../store/window";
 import { WindowControls } from "../components";
+import { ExternalLink } from "lucide-react";
 
 const ImageWindowContent = () => {
   const { windows } = useWindowStore();
@@ -9,13 +10,18 @@ const ImageWindowContent = () => {
 
   if (!data) return null;
 
-  const { name, imageUrl } = data;
+  const { name, imageUrl, url } = data;
 
   return (
     <>
       <div id="window-header">
         <WindowControls target="imgfile" />
-        <h2>{name}</h2>
+        <div className="w-full flex justify-end items-center gap-3 text-gray-500">
+          
+          <a href={url} target="_blank" rel="noopener noreferrer"><ExternalLink className="icon" /></a>
+          <h2>{name}</h2>
+        </div>
+        
       </div>
 
       <div className="p-5 bg-white">

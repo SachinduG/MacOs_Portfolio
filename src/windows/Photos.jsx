@@ -1,13 +1,21 @@
-import React from "react";
-import { FileType, Mail, Search } from "lucide-react";
+
+import React, { useState, useMemo } from "react";
+import { Mail, Search } from "lucide-react";
+import { clsx } from "clsx";
 
 import WindowWrapper from "../hoc/WindowWrapper";
 import { WindowControls } from "../components";
-import { gallery, photosLinks } from "../constants";
+import { photoGalleries, photosLinks } from "../constants";
 import useWindowStore from "../store/window";
 
 const Photos = () => {
   const { openWindow } = useWindowStore();
+  const [activeCategory, setActiveCategory] = useState("Automation");
+
+  const activeGallery = useMemo(
+    () => photoGalleries[activeCategory] || [],
+    [activeCategory]
+  );
 
   return (
     <>
@@ -25,16 +33,21 @@ const Photos = () => {
           <h2>Photos</h2>
           <ul>
             {photosLinks.map(({ id, icon, title }) => (
-              <li key={id}>
+              <li
+                key={id}
+                onClick={() => setActiveCategory(title)}
+                className={clsx(activeCategory === title && "active")}
+              >
                 <img src={icon} alt={title} />
                 <p>{title}</p>
               </li>
             ))}
           </ul>
         </div>
+
         <div className="gallery">
           <ul>
-            {gallery.map(({ id, img }) => (
+            {activeGallery.map(({ id, img, url }) => (
               <li
                 key={id}
                 onClick={() =>
@@ -45,6 +58,7 @@ const Photos = () => {
                     kind: "file",
                     fileType: "img",
                     imageUrl: img,
+                    url,
                   })
                 }
               >

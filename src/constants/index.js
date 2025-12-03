@@ -209,59 +209,81 @@ const photosLinks = [
     icon: "/icons/gicon4.svg",
     title: "Other",
   },
-  {
-    id: 5,
-    icon: "/icons/gicon5.svg",
-    title: "Favorites",
-  },
 ];
 
-const gallery = [
+const gallery1 = [
   {
     id: 1,
-    img: "/images/gal1.png",
+    img: "/images/gal7.png",
+    url: "https://credentials.uipath.com/568902e9-9512-43a6-bf83-538c4cb4b883",
   },
   {
     id: 2,
-    img: "/images/gal2.png",
+    img: "/images/gal8.png",
+    url: "https://credentials.uipath.com/e3f052d5-29d3-4334-a957-a23d569e7412",
   },
   {
     id: 3,
-    img: "/images/gal3.png",
+    img: "/images/gal6.png",
+    url: "https://www.credly.com/badges/5214a1e7-d6f6-434c-a616-e87c9ec29f65",
+  },
+];
+
+const gallery2 = [
+  {
+    id: 1,
+    img: "/images/gal2.png",
+    url: "https://www.credly.com/earner/earned/badge/4cb44c27-bff6-4cd1-b473-0301bac5ecfc",
+  },
+  {
+    id: 2,
+    img: "/images/gal5.png",
+    url: "https://www.credly.com/badges/103b867c-0b2c-4080-a568-2e028eb70e5b",
+  },
+  {
+    id: 3,
+    img: "/images/gal9.png",
+    url: "https://www.credly.com/earner/earned/badge/2c776a0e-9a27-4107-abb7-16cd5d97ebb8",
   },
   {
     id: 4,
-    img: "/images/gal4.png",
+    img: "/images/gal3.png",
+    url: "https://www.credly.com/earner/earned/badge/40a391d2-f47a-42b2-9462-93808b28fb96",
   },
   {
     id: 5,
-    img: "/images/gal5.png",
-  },
-  {
-    id: 6,
-    img: "/images/gal6.png",
-  },
-  {
-    id: 7,
-    img: "/images/gal7.png",
-  },
-  {
-    id: 8,
-    img: "/images/gal8.png",
-  },
-  {
-    id: 9,
-    img: "/images/gal9.png",
-  },
-  {
-    id: 10,
-    img: "/images/gal10.png",
-  },
-  {
-    id: 11,
     img: "/images/gal11.png",
+    url: "https://www.credly.com/earner/earned/badge/f66e2234-5230-4735-a528-6e71d8cb780e",
   },
 ];
+
+const gallery3 = [
+  {
+    id: 1,
+    img: "/images/gal4.png",
+    url: "https://www.credly.com/earner/earned/badge/2a1c0b2e-42ee-4ab9-b545-4fc7f4969c0f",
+  },
+  {
+    id: 2,
+    img: "/images/gal10.png",
+    url: "https://www.credly.com/badges/faecc945-7429-4ee8-b498-c0c47106c197",
+  },
+];
+
+const gallery4 = [
+  {
+    id: 1,
+    img: "/images/gal1.png",
+    url: "https://www.credly.com/earner/earned/badge/e5d335fe-0fbd-48f7-a46c-d4ef3d1dbcc3",
+  },
+];
+
+const photoGalleries = {
+  Automation: gallery1,
+  Cybersecurity: gallery2,
+  Data: gallery3,
+  Other: gallery4,
+};
 
 export {
   navLinks,
@@ -271,7 +293,7 @@ export {
   techStack,
   socials,
   photosLinks,
-  gallery,
+  photoGalleries,
 };
 
 const WORK_LOCATION = {
@@ -283,7 +305,7 @@ const WORK_LOCATION = {
   children: [
     // ▶ Project 1
     {
-      id: 5,
+      id: 1,
       name: "Conference Management Website Application",
       icon: "/images/folder.png",
       kind: "folder",
@@ -327,7 +349,7 @@ const WORK_LOCATION = {
 
     // ▶ Project 2
     {
-      id: 6,
+      id: 2,
       name: "SmartFuel App",
       icon: "/images/folder.png",
       kind: "folder",
@@ -382,8 +404,8 @@ const WORK_LOCATION = {
 
     // ▶ Project 3
     {
-      id: 7,
-      name: "Food Delivery App",
+      id: 3,
+      name: "Auto Trader API - Payment Microservice",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -391,44 +413,26 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Food Delivery App Project.txt",
+          name: "Auto Trader API.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-            "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-            "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-            "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+            "Auto Trader is a centralized digital marketplace designed to bridge the gap between vehicle owners, service providers, and the automotive community.",
+            "Instead of a standard classifieds site, it serves as a specialized hub for Vehicles, Spare Parts, and Services—allowing anyone to advertise or discover solutions cost-free.",
+            "Think of it as a curated automotive ecosystem—where every submission undergoes a rigorous admin review process to ensure quality and trust before hitting the feed.",
+            "It features a robust role-based architecture, empowering registered users to showcase inventory while giving administrators full oversight to manage the platform's integrity.",
           ],
         },
         {
           id: 2,
-          name: "food-delivery-app.com",
+          name: "github.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+          href: "https://github.com/SachinduG/auto-trader-payment",
           position: "top-10 right-20",
-        },
-        {
-          id: 4,
-          name: "food-delivery-app.png",
-          icon: "/images/image.png",
-          kind: "file",
-          fileType: "img",
-          position: "top-52 right-80",
-          imageUrl: "/images/project-3.png",
-        },
-        {
-          id: 5,
-          name: "Design.fig",
-          icon: "/images/plain.png",
-          kind: "file",
-          fileType: "fig",
-          href: "https://google.com",
-          position: "top-60 right-20",
         },
       ],
     },
