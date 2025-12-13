@@ -6,9 +6,27 @@ const WindowControls = ({ target }) => {
     useWindowStore();
   return (
     <div id="window-controls">
-      <div className="close" onClick={() => closeWindow(target)} />
-      <div className="minimize" onClick={() => minimizeWindow(target)} />
-      <div className="maximize" onClick={() => toggleMaximizeWindow(target)} />
+      <div
+        className="close"
+        onClick={(e) => {
+          e.stopPropagation();
+          closeWindow(target);
+        }}
+      />
+      <div
+        className="minimize"
+        onClick={(e) => {
+          e.stopPropagation();
+          minimizeWindow(target);
+        }}
+      />
+      <div
+        className="maximize"
+        onClick={(e) => {
+          e.stopPropagation();
+          toggleMaximizeWindow(target);
+        }}
+      />
     </div>
   );
 };

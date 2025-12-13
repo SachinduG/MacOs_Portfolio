@@ -5,10 +5,11 @@ import useWindowStore from "../store/window";
 
 const Navbar = () => {
   const { openWindow } = useWindowStore();
-  const [theme, setTheme] = useState("default");
+  const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "default");
 
   useEffect(() => {
-    document.body.setAttribute("data-theme", theme);
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   const toggleTheme = () => {
@@ -35,8 +36,15 @@ const Navbar = () => {
       <div>
         <ul>
           {navIcons.map(({ id, img }) => (
-
-            <li key={id} onClick={() => id === 4 && toggleTheme()}>
+            <li
+              key={id}
+              onClick={(e) => {
+                e.stopPropagation();
+                if (id === 4) toggleTheme();
+                if (id === 3) openWindow("contact");
+              }}
+              style={{ cursor: id === 4 || id === 3 ? "pointer" : "default" }}
+            >
               <img src={img} className="icon-hover" alt={`icon-${id}`} />
             </li>
           ))}
