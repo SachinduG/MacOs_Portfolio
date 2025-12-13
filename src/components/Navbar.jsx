@@ -1,9 +1,23 @@
+import { useState, useEffect } from "react";
 import { navIcons, navLinks } from "../constants";
 import dayjs from "dayjs";
 import useWindowStore from "../store/window";
 
 const Navbar = () => {
   const { openWindow } = useWindowStore();
+  const [theme, setTheme] = useState("default");
+
+  useEffect(() => {
+    document.body.setAttribute("data-theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => {
+      if (prev === "default") return "dark";
+      if (prev === "dark") return "light";
+      return "default";
+    });
+  };
 
   return (
     <nav>
@@ -21,7 +35,8 @@ const Navbar = () => {
       <div>
         <ul>
           {navIcons.map(({ id, img }) => (
-            <li key={id}>
+
+            <li key={id} onClick={() => id === 4 && toggleTheme()}>
               <img src={img} className="icon-hover" alt={`icon-${id}`} />
             </li>
           ))}
